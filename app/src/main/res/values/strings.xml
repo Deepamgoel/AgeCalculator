@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PracticeJava</string>
+    <string name="age_calculator">Age Calculator</string>
+    <string name="d_o_b"><u>Your D.O.B.</u></string>
+    <string name="date">Date :</string>
+    <string name="month">Month :</string>
+    <string name="year">Year :</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="button">Calculate</string>
+    <string name="dateVar">1</string>
+    <string name="monthVar">1</string>
+    <string name="yearVar">1990</string>
+    <string name="date_goes_here">date goes here \n</string>
+</resources>

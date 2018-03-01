@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/AgeCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/marginH"
+        android:fontFamily="cursive"
+        android:text="@string/age_calculator"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="@dimen/Heading"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AgeCalc"
+        android:layout_margin="@dimen/marginH"
+        android:fontFamily="cursive"
+        android:text="@string/d_o_b"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DOB"
+        android:layout_marginTop="@dimen/marginTop"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:fontFamily="cursive"
+            android:gravity="center_vertical"
+            android:text="@string/date"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/text" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginStart="@dimen/marginStart"
+            android:gravity="center"
+            android:onClick="decD"
+            android:text="@string/minus"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/buttonText" />
+
+        <TextView
+            android:id="@+id/DateVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/dateVar"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/textVar" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginStart="@dimen/marginStart"
+            android:gravity="center"
+            android:onClick="incD"
+            android:text="@string/plus"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/buttonText" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Date"
+        android:layout_marginTop="@dimen/marginTop"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:fontFamily="cursive"
+            android:text="@string/month"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/text" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginStart="@dimen/marginStart"
+            android:gravity="center"
+            android:onClick="decM"
+            android:text="@string/minus"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/buttonText" />
+
+        <TextView
+            android:id="@+id/MonthVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/monthVar"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/textVar" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginStart="@dimen/marginStart"
+            android:gravity="center"
+            android:onClick="incM"
+            android:text="@string/plus"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/buttonText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Month"
+        android:layout_marginTop="@dimen/marginTop"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:fontFamily="cursive"
+            android:text="@string/year"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/text" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginStart="@dimen/marginStart"
+            android:gravity="center"
+            android:onClick="decY"
+            android:text="@string/minus"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/buttonText" />
+
+        <TextView
+            android:id="@+id/YearVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/yearVar"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/textVar" />
+
+        <Button
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginStart="@dimen/marginStart"
+            android:gravity="center"
+            android:onClick="incY"
+            android:text="@string/plus"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/buttonText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ResultButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Year"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginButtonTop"
+        android:fontFamily="serif"
+        android:onClick="calc"
+        android:text="@string/button"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="@dimen/calculate" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/date_goes_here"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="@dimen/textVar"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

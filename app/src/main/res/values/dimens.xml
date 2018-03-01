@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginH">15dp</dimen>
+    <dimen name="marginTop">5dp</dimen>
+    <dimen name="marginStart">25dp</dimen>
+    <dimen name="marginButtonTop">50dp</dimen>
+    <dimen name="Heading">45sp</dimen>
+    <dimen name="text">34sp</dimen>
+    <dimen name="textVar">24sp</dimen>
+    <dimen name="buttonText">15sp</dimen>
+    <dimen name="width">100dp</dimen>
+    <dimen name="button">35dp</dimen>
+    <dimen name="calculate">24sp</dimen>
+</resources>
